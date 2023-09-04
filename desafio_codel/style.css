@@ -8,6 +8,7 @@ html, body {
     font-family: 'Comic Sans', sans-serif;
     min-height: 100vh;
     font-weight: normal;
+    background-color: darkgrey;
 }
 main {
     width: auto;
@@ -38,9 +39,16 @@ header a {
 header a:hover {
     text-decoration: underline;
 }
-.sem-imagem {
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
-.poema-sem-img {
+.sem-imagem {
+    background-color: white;
+}
+.com-imagem {
+    background-color: rgb(77, 77, 77);
+    color: white;
 }
 footer {
     background-color: black;
