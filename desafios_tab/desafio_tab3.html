@@ -31,20 +31,20 @@
     <table>
         <thead>
             <tr>
-                <th rowspan="2">Área</th>
-                <th rowspan="2">Disciplinas</th>
-                <th colspan="2">Notas</th>
-                <th rowspan="2">Média</th>
+                <th rowspan="2" scope="colgroup">Área</th>
+                <th rowspan="2" scope="colgroup">Disciplinas</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="colgroup">Média</th>
             </tr>
             <tr>
-                <th>Nota 1</th>
-                <th>Nota 2</th>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
             </tr>
         </thead>
         <tbody>
             <!-- Exatas -->
             <tr>
-                <th rowspan="4"> Exatas </th>
+                <th rowspan="4" scope="rowgroup"> Exatas </th>
                 <td> Matemática</td>
                 <td> 0.0</td>
                 <td> 0.0</td>
@@ -69,12 +69,12 @@
                 <td>0.0</td>
             </tr>
             <tr class="total">
-                <th colspan="4"> Média de Exatas</th>
+                <th colspan="4" scope="row"> Média de Exatas</th>
                 <th> 0.0</th>
             </tr>
             <!-- Humanas -->
             <tr>
-                <th rowspan="2"> Humanas </th>
+                <th rowspan="2" scope="rowgroup"> Humanas </th>
                 <td> História </td>
                 <td> 0.0</td>
                 <td> 0.0</td>
@@ -87,7 +87,7 @@
                 <td> 0.0</td>
             </tr>
             <tr class="total">
-                <th colspan="4"> Média de Humanas </th>
+                <th colspan="4" scope="row"> Média de Humanas </th>
                 <th> 0.0</th>
             </tr>
         </tbody>
