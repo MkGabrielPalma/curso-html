@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.:: Página 5 ::.</title>
+</head>
+<body>
+    <a href="#" onclick="clicou()"> Clique em mim</a>
+    <div id="saida">
+
+    </div>
+    <script>
+        
+        function clicou() {
+            const s = document.getElementById("saida")
+            const p = document.createElement("p")
+            p.textContent = "Você clicou"
+            s.appendChild(p)
+        }
+    </script>
+</body>
+</html>
