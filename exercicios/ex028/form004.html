@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.:: Formulário 004 ::.</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        fieldset {
+            height: 500px;
+            background-image: url(https://us-tuna-sounds-images.voicemod.net/93d424dd-a0b6-4ab2-995d-282fe547e056-1685010539880.png);
+            position: bottom;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1> Teste de Formulário </h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend> Dados Pessoais</legend>
+            <p>
+                <label for="inome"> Nome: </label>
+                <input type="text" name="nome" id="inome">
+            </p>
+            <p>
+                <label for="iemail"> Email: </label>
+                <input type="email" name="email" id="iemail" required autocomplete="email">
+            </p>
+            <p>
+                <label for="ifone"> Telefone: </label>
+                <input type="tel" name="fone" id="ifone" autocomplete="tel-national" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxxx-xxxx" required>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
