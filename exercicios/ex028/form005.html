@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.:: Formulário 005 ::.</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1> Teste de Formulário </h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend> Sexo </legend>
+            <input type="radio" name="sexo" id="isxm" value="M"> <label for="isxm"> Masculino</label> <br>
+            <input type="radio" name="sexo" id="isxf" value="F"> <label for="isxf"> Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>
+                Esportes Favoritos
+            </legend>
+            <input type="checkbox" name="checkbas" id="icheckbas" value="basquete"> <label for="icheckbas">Basquete</label> <br> 
+            <input type="checkbox" name="checkfut" id="icheckfut" value="futebol"> <label for="icheckfut">Futebol</label> <br>
+            <input type="checkbox" name="checknat" id="ichecknat" value="natacao"> <label for="ichecknat">Natação</label> <br>
+            <input type="checkbox" name="checkten" id="icheckten" value="tenis"> <label for="icheckten">Tênis</label> <br>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
