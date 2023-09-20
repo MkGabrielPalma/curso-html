@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.:: Menu Responsivo ::.</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+</head>
+<body>
+    <header>
+        <h1> Meu Site</h1>
+        <span class="material-icons" id="menu" onclick="menu()">menu</span>
+        <menu id="m_itens">
+            <ul>
+                <li> <a href="#"> Opção 1</a></li>
+                <li> <a href="#"> Opção 2</a></li>
+                <li> <a href="#"> Opção 3</a></li>
+                <li> <a href="#"> Opção 4</a></li>
+                <li> <a href="#"> Opção 5</a></li>
+                <li> <a href="#"> Opção 6</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2> Testando Menus</h2>
+            <p> 
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet dolores natus provident doloribus quibusdam magnam tenetur! Suscipit et voluptatum cupiditate sit a dolore voluptates, cum quo debitis facilis, nulla laboriosam.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, modi aliquid nobis nisi mollitia vero nemo ducimus neque dolorum in ut id eum, ab veritatis consectetur voluptas minima facilis numquam?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos fugiat dolores vel corporis enim itaque, ullam dignissimos ducimus ex qui delectus corrupti illum. Voluptas rem libero voluptatem impedit hic vitae?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam explicabo pariatur vel maiores tempore quos omnis rem consectetur, porro illo nam sint eius culpa quae optio officia fugit? Ratione, architecto?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus maiores accusantium excepturi unde explicabo quidem ut deleniti id, doloremque, soluta nulla, possimus illum quibusdam atque dignissimos suscipit odio mollitia magni?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis minima itaque odio laudantium error voluptates tempore qui incidunt vero? Maxime, consectetur? Sunt voluptatem adipisci eligendi. Enim tempore perferendis porro commodi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laboriosam corrupti totam, explicabo perferendis blanditiis fugit? Amet atque, veniam iure fuga sed consectetur, possimus magni in sit aperiam reiciendis minus?
+            </p>
+        </article>
+    </main>
+    <script>
+        function menu() {
+            if(m_itens.style.display == 'block'){
+                m_itens.style.display = 'none'
+            } else {
+                m_itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
