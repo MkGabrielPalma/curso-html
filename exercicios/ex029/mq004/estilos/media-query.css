@@ -1,3 +1,73 @@
 @charset "UTF-8";
 
 /* Outras Mídias */
+
+/* 
+Typical Device Breakpoints
+Pequenas telas: até 600px
+celulares: de 600px até 767
+tablet: 768px até 1023
+descktop: mínimo 1024
+grandes telas: a partir de 1200px
+*/
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1em;
+    }
+    main {
+        text-align: center;
+        width: 105vw;
+        border: 1px solid black;
+    }
+    main  h1 {
+        text-shadow: none;
+        color: black;
+    }
+    main::after {
+        content: 'Impressão feita pelo exercício do curso de HTML5 e CSS3 do curso em video';
+        text-decoration: overline;
+    }
+    #cell {display: none;}
+    #tablet {display: none;}
+    #print {display: block;}
+    #pc {display: none;} 
+    #tv {display: none;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    #cell {display: none;}
+    #tablet {display: block;}
+    #print {display: none;}
+    #pc {display: none;} 
+    #tv {display: none;}
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px){
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    #cell {display: none;}
+    #tablet {display: none;}
+    #print {display: none;}
+    #pc {display: block;} 
+    #tv {display: none;}
+}
+
+@media screen and (min-width: 1200px){
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    main {
+        width: 700px;
+    }
+    #cell {display: none;}
+    #tablet {display: none;}
+    #print {display: none;}
+    #pc {display: none;} 
+    #tv {display: block;} 
+}

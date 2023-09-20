@@ -28,7 +28,7 @@ main {
 h1 {
     text-align: center;
     color: white;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.204);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.400);
 }
 img {
     display: block;
